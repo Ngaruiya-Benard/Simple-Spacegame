@@ -10,8 +10,8 @@
  	*Main inherits from JFrame and implements methods from the abstract classes KeyListener and MouseListener
  	
  	
- The Aggregate hierarchy for this assignment is as follows:
- 	Main class (which contains the main driver for the assignment) owns:
+ The Aggregate hierarchy for this is as follows:
+ 	Main class (which contains the main driver for the program) owns:
  		*JButton
  		*ComboBox instance
  		*ComboBoxCars instance
@@ -65,12 +65,12 @@
 	primarily revolve around interacting with the user, collecting information on when the user wants the simulation to run and what vehicles the user
 	wishes to see on the canvas. 
 	
-	In this assignment I got rid of Boats and cars since they are redundant and not needed in the game simulation.
+	In this version I got rid of Boats and cars since they are redundant and not needed in the game simulation.
 	
 	
 	
 CHALLENGES AND DISCOVERIES
-	The biggest problem I had with this was figuring out how to handle collisions since in previous assignments I had simply stored and updated array co_ordinates in lieu of actual polygons, which I would just draw with the 
-	draw function to draw. In this assignment, I stored a Polygon object which I then reinitialized in each repaint to take in newer co_ordinates. With that, the biggest problem was now figuring out collisions, since eclipse would not allow me to use the intersects function of Polygons. I then
+	The biggest problem I had with this was figuring out how to handle collisions since in previous attempts I had simply stored and updated array co_ordinates in lieu of actual polygons, which I would just draw with the 
+	draw function to draw. In this version, I stored a Polygon object which I then reinitialized in each repaint to take in newer co_ordinates. With that, the biggest problem was now figuring out collisions, since eclipse would not allow me to use the intersects function of Polygons. I then
 	decided to use 2D rectangles which I would use to store the bounding box of the Polygons. Once I did that, I simply used the intersects function of the Rectangle class to handle collisions. 
 	
